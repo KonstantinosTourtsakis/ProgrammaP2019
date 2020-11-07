@@ -10,8 +10,8 @@ nav{
 
 .programma{
 	margin-top: 25px;
-	margin-right: 150px;
-	margin-left: 150px;
+	/*margin-right: 150px;
+	margin-left: 150px;*/
 }
 
 a.aone{
@@ -86,4 +86,9 @@ td:hover{
 	color: white;
 	justify-content: center;
     align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
 }
