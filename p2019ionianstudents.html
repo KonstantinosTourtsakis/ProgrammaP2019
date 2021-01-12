@@ -6,6 +6,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="p2019.css">
 	<link rel="icon" href="https://cdn.onlinewebfonts.com/svg/img_553961.png">
+
+	<style>
+		#demo {
+			text-align: center;
+			font-size: 170%;
+			color: red;
+			background-color: black;
+			margin-left: 33%;
+			margin-right:33%;
+		}
+	</style>
 </head>
 <body>
 	<nav>
@@ -14,6 +25,33 @@
 		<a href="https://opencourses.ionio.gr/"class="aone" target="_blank">OpenCourses</a>
 		<a href="http://gram-web.ionio.gr/unistudent/" class="aone" target="_blank">Gramweb</a>
 	</nav>
+
+	<div>
+		<p id="demo"></p>
+
+<script>
+var countDownDate = new Date("Jan 19, 2021 12:00:00").getTime();
+
+var x = setInterval(function() 
+{
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("demo").innerHTML = "Εξέταση μαθήματος Στατιστικής σε: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Εξετάστηκε: Στατιστική - Επόμενο μάθημα: Αντικειμενοστρεφής Προγραμματισμός";
+  }
+}, 1000);
+</script>
+</div>
 
 	<div class="programma">
 		<br>
