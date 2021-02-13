@@ -21,6 +21,7 @@ a.aone{
 	color: white;
 	padding: 15px;
 	font-size: 25px;
+	font-weight: bold;
 }
 
 a:hover.aone{
@@ -40,6 +41,7 @@ table{
 	table-layout: fixed;
 	text-overflow: auto;
 	word-wrap: initial;
+	font-weight: bold;
 }
 
 a.td1{
@@ -69,6 +71,7 @@ th{
 	text-align: center;
 	color: white;
 	overflow: auto;
+	font-weight: bold;
 }
 
 td{
